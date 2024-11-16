@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif' -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: url("images/farms.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 2;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid greenyellow;
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box {
+    position: fixed; /* Use fixed to keep it centered during scrolling */
+    top: 65%; /* Move down 50% of the viewport height */
+    left: 30%; /* Move right 50% of the viewport width */
+    display: flex; /* Retain flexbox display */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.form-box h1 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.login-container {
+    position: absolute;
+    left: 4px;
+    scroll-behavior: smooth;
+    width: 400px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid rgba(33, 33, 33, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 20px; /* Rounded corners for all edges */
+    padding: 20%;
+    transition: .5s ease-in-out;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional */
+    
+}
+
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    
+}
+
+.login h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+
+.login form .input-box[type="password"] {
+    width: 410px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form .input-box[type="text"] {
+    width: 410px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: green;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: green;
+    transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+.login input-fields{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 50px;
+    width: 100px;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2 ease;
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 50px;
+    width: 250px;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2 ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: #ffffff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #ffffff;    
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    height: 45px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: green;
+    cursor: pointer;
+    transition: .3 ease-in-out;
+}
+
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2); 
+}
+.two-col{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: small;
+    margin-top: 10px;
+}
